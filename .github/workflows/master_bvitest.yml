@@ -13,11 +13,6 @@
     # The directory where the build output has to be put.
     output-directory: # optional
     
-    - name: .NET Core Command-Line Interface
-  # You may pin to the exact commit or the version.
-  # uses: joeltankam/dotnet-action@df3b8c41923750c7c099552722517521c7ee1bc9
-  uses: joeltankam/dotnet-action@1.0.0
-    
 name: Build and deploy ASP.Net Core app to Azure Web App - bvitest
 
 on:
