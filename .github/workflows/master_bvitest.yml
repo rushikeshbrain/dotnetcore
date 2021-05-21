@@ -1,6 +1,18 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
+- name: App Service Web App Build Action
+  uses: Azure/appservice-build@v2
+  with:
+    # Relative path (within the repository) to the source directory of the project you want to build; if no value is provided for this, the root of the repository ("GITHUB_WORKSPACE" environment variable) will be built.
+    source-directory: # optional
+    # Programming platform used to build the web app; if no value is provided, Oryx will determine the platform to build with. The supported values are "dotnet", "nodejs", "php" and "python".
+    platform: # optional
+    # Version of the programming platform used to build the web app; if no value is provided, Oryx will determine the version needed to build the repository.
+    platform-version: # optional
+    # The directory where the build output has to be put.
+    output-directory: # optional
+    
 name: Build and deploy ASP.Net Core app to Azure Web App - bvitest
 
 on:
